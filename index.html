@@ -74,7 +74,7 @@
     }
 
     #main>#container>section {
-      margin-left: 150px;
+      margin-left: 173px;
       position: relative;
       display: block;
     }
@@ -152,6 +152,16 @@
 
     #contact {
       float: right;
+    }
+
+    #avatar {
+      position: absolute;
+      top: 51px;
+      transform: translateY(-50%);
+      left: -170px;
+      -webkit-box-shadow: 6px 6px 20px -4px rgba(0,0,0,0.75);
+      -moz-box-shadow: 6px 6px 20px -4px rgba(0,0,0,0.75);
+      box-shadow: 6px 6px 20px -4px rgba(0,0,0,0.75);
     }
 
     #summary>header>.fa-info {
@@ -321,7 +331,9 @@
       </div>
       <hr>
       <section id="summary">
-        <header> <span class="fa fa-lg fa-info"></span>
+        <header>
+          
+          <img src="images/khanghuynh.jpg" alt="Smiley face" id="avatar" height="150" width="150">
           <h2>info</h2>
 
         </header>I&#39;m passion about building awesome products, also rock in Javascript/Node.js
@@ -399,6 +411,8 @@
                 <div class="label label-keyword"> <span class="kw">Microservices</span>
                 </div>
                 <div class="label label-keyword"> <span class="kw">Google Cloud Platform</span>
+                </div>
+                <div class="label label-keyword"> <span class="kw">AWS</span>
                 </div>
               </div>
             </div>
