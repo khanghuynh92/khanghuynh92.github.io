@@ -156,11 +156,12 @@
       font-size: 150%;
       margin-left: 0;
       padding: 20px 0;
+      font-size: 25px;
     }
 
     @media only screen and (max-device-width: 480px) {
       #summary {
-        font-size: 100%;
+        font-size: 14px;
         margin-left: 170px !important;
       }
     }
@@ -183,28 +184,22 @@
 
     #avatar {
       position: absolute;
-      top: 51px;
+      top: 71px;
       transform: translateY(-50%);
       left: -170px;
       -webkit-box-shadow: 6px 6px 20px -4px rgba(0,0,0,0.75);
       -moz-box-shadow: 6px 6px 20px -4px rgba(0,0,0,0.75);
       box-shadow: 6px 6px 20px -4px rgba(0,0,0,0.75);
-    }
-
-    #avatar {
-      position: absolute;
-      top: 51px;
-      transform: translateY(-50%);
-      left: -170px;
-      -webkit-box-shadow: 6px 6px 20px -4px rgba(0,0,0,0.75);
-      -moz-box-shadow: 6px 6px 20px -4px rgba(0,0,0,0.75);
-      box-shadow: 6px 6px 20px -4px rgba(0,0,0,0.75);
+      width: 150px;
+      height: 150px;
     }
 
     @media only screen and (max-device-width: 480px) {
       #avatar {
         top: 105px;
         left: -180px;
+        /* width: 100px;
+        height: 100px; */
       }
     }
 
@@ -382,13 +377,14 @@
       <section id="summary">
         <header>
           
-          <img src="images/khanghuynh.jpg" alt="Smiley face" id="avatar" height="150" width="150">
+          <img src="images/khanghuynh.jpg" alt="Smiley face" id="avatar">
           <h2>info</h2>
 
         </header>I&#39;m passionate about building awesome products, also rock in Javascript/Node.js
         and hacking on side projects.
       </section>
       <hr>
+      </br>
       <section id="skills">
         <header>
           <h2>Skills</h2>
