@@ -46,6 +46,12 @@
       font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'Calibri', 'sans-serif';
     }
 
+    @media only screen and (max-device-width: 480px) {
+      body {
+        font-size: 14px;
+      }
+    }
+
     /* Typical page borders are awkward when rendered to PDF. */
     body.pdf {
       background-color: #FFFFFF;
@@ -77,6 +83,12 @@
       margin-left: 173px;
       position: relative;
       display: block;
+    }
+
+    @media only screen and (max-device-width: 480px) {
+      #main>#container>section {
+        margin-left: 105px;
+      }
     }
 
     section>div {
@@ -146,12 +158,37 @@
       padding: 20px 0;
     }
 
+    @media only screen and (max-device-width: 480px) {
+      #summary {
+        font-size: 100%;
+        margin-left: 170px !important;
+      }
+    }
+
+
     #summary>p>strong {
       font-size: 1.25em;
     }
 
     #contact {
       float: right;
+    }
+
+    @media only screen and (max-device-width: 480px) {
+      #contact {
+        font-size: 22px;
+      }
+    }
+
+
+    #avatar {
+      position: absolute;
+      top: 51px;
+      transform: translateY(-50%);
+      left: -170px;
+      -webkit-box-shadow: 6px 6px 20px -4px rgba(0,0,0,0.75);
+      -moz-box-shadow: 6px 6px 20px -4px rgba(0,0,0,0.75);
+      box-shadow: 6px 6px 20px -4px rgba(0,0,0,0.75);
     }
 
     #avatar {
@@ -164,6 +201,13 @@
       box-shadow: 6px 6px 20px -4px rgba(0,0,0,0.75);
     }
 
+    @media only screen and (max-device-width: 480px) {
+      #avatar {
+        top: 105px;
+        left: -180px;
+      }
+    }
+
     #summary>header>.fa-info {
       font-size: 70px;
       letter-spacing: 5px;
@@ -173,7 +217,6 @@
       left: -85px;
       transform: translateY(-50%);
     }
-
     #summary h2 {
       display: none;
     }
@@ -190,6 +233,12 @@
       margin-top: 2px;
       font-weight: bold;
       text-align: center;
+    }
+
+    @media only screen and (max-device-width: 480px) {
+      .label-keyword {
+        font-size: 1.7em;
+      }
     }
 
     .notes {
@@ -506,7 +555,7 @@
         </header>
 
         <div>
-          <h3><em>Fullstack Web Developer - Residential Online Market (Personal Project)</em>,
+          <h3><em>Fullstack Web Developer -  eCommerce Marketplace Platform For Residents (Personal Project)</em>,
             <a href="http://demo.chothesun.com">ChoTheSun</a>
           </h3>
           <span class="tenure">2020-03 — 2020-07</span>
@@ -538,7 +587,8 @@
         </div>
 
         <div>
-          <h3><em>Fullstack Web Developer</em>,
+          <h3><em>Fullstack Web Developer</em> -
+            eCommerce Platform For Premium Brands,
             <a href="https://www.leflair.vn">Leflair</a>
           </h3>
           <span class="tenure">2018-05 — 2020-03</span>
