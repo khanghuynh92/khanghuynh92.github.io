@@ -46,6 +46,12 @@
       font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'Calibri', 'sans-serif';
     }
 
+    @media only screen and (max-device-width: 480px) {
+      body {
+        font-size: 14px;
+      }
+    }
+
     /* Typical page borders are awkward when rendered to PDF. */
     body.pdf {
       background-color: #FFFFFF;
@@ -77,6 +83,12 @@
       margin-left: 173px;
       position: relative;
       display: block;
+    }
+
+    @media only screen and (max-device-width: 480px) {
+      #main>#container>section {
+        margin-left: 105px;
+      }
     }
 
     section>div {
@@ -144,7 +156,16 @@
       font-size: 150%;
       margin-left: 0;
       padding: 20px 0;
+      font-size: 25px;
     }
+
+    @media only screen and (max-device-width: 480px) {
+      #summary {
+        font-size: 14px;
+        margin-left: 170px !important;
+      }
+    }
+
 
     #summary>p>strong {
       font-size: 1.25em;
@@ -154,14 +175,33 @@
       float: right;
     }
 
+    @media only screen and (max-device-width: 480px) {
+      #contact {
+        font-size: 22px;
+      }
+    }
+
+
     #avatar {
       position: absolute;
-      top: 51px;
+      top: 71px;
       transform: translateY(-50%);
       left: -170px;
       /* -webkit-box-shadow: 6px 6px 20px -4px rgba(0,0,0,0.75); */
       /* -moz-box-shadow: 6px 6px 20px -4px rgba(0,0,0,0.75); */
       /* box-shadow: 6px 6px 20px -4px rgba(0,0,0,0.75); */
+      width: 150px;
+      height: 150px;
+    }
+
+    @media only screen and (max-device-width: 480px) {
+      #avatar {
+        top: 105px;
+        left: -180px;
+        /* width: 100px;
+        height: 100px; */
+      }
+>>>>>>> 0d407f49addf29b6a3a21f2f0be2cc8e5f8ea0b8
     }
 
     #summary>header>.fa-info {
@@ -173,7 +213,6 @@
       left: -85px;
       transform: translateY(-50%);
     }
-
     #summary h2 {
       display: none;
     }
@@ -190,6 +229,12 @@
       margin-top: 2px;
       font-weight: bold;
       text-align: center;
+    }
+
+    @media only screen and (max-device-width: 480px) {
+      .label-keyword {
+        font-size: 1.7em;
+      }
     }
 
     .notes {
@@ -333,13 +378,14 @@
       <section id="summary">
         <header>
           
-          <img src="images/khang-avatar.png" alt="Smiley face" id="avatar" height="150" width="150">
+          <img src="images/khang-avatar.png" alt="Khang Huynh" id="avatar">
           <h2>info</h2>
 
         </header>I&#39;m passionate about building awesome products, also rock in Javascript/Node.js
         and hacking on side projects.
       </section>
       <hr>
+      </br>
       <section id="skills">
         <header>
           <h2>Skills</h2>
@@ -506,7 +552,7 @@
         </header>
 
         <div>
-          <h3><em>Fullstack Web Developer - Residential Online Market (Personal Project)</em>,
+          <h3><em>Fullstack Web Developer -  eCommerce Marketplace Platform For Residents (Personal Project)</em>,
             <a href="http://demo.chothesun.com">ChoTheSun</a>
           </h3>
           <span class="tenure">2020-03 — 2020-07</span>
@@ -538,7 +584,8 @@
         </div>
 
         <div>
-          <h3><em>Fullstack Web Developer</em>,
+          <h3><em>Fullstack Web Developer</em> -
+            eCommerce Platform For Premium Brands,
             <a href="https://www.leflair.vn">Leflair</a>
           </h3>
           <span class="tenure">2018-05 — 2020-03</span>
